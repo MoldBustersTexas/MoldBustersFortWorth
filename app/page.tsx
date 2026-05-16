@@ -216,7 +216,7 @@ export default function MoldBustersFortWorthWebsite() {
   );
 }
 
-function ServiceCard({ icon, title, text }) {
+function ServiceCard({ icon, title, text }: any) {
   return (
     <Card className="rounded-3xl shadow-sm hover:shadow-md transition-shadow">
       <CardContent className="p-6">
