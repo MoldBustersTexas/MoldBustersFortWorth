@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://moldbustersfortworth.com
+
+# Sitemaps
+Sitemap: https://moldbustersfortworth.com/sitemap.xml
