@@ -139,7 +139,13 @@ export default function MoldBustersFortWorthWebsite() {
     text="Air and surface sampling options, InstaScope real-time air quality screening, and third-party laboratory reporting with practical explanation of findings."
   />
 </a>
-          <ServiceCard icon={<Home />} title="Mold Removal & Air Quality Treatment" text="Mold-related cleaning, dry fog treatment options, odor reduction, and indoor air quality-focused services for homes and businesses throughout DFW." />
+<a href="/mold-removal-fort-worth">
+  <ServiceCard
+    icon={<Home />}
+    title="Mold Removal & Air Quality Treatment"
+    text="Mold-related cleaning, dry fog treatment options, odor reduction, and indoor air quality-focused services for homes and businesses throughout DFW."
+  />
+</a>
           <ServiceCard icon={<ShieldCheck />} title="HVAC & Moisture Review" text="General observations around humidity, condensation, air leaks, and HVAC-related contamination concerns." />
         </div>
       </section>
