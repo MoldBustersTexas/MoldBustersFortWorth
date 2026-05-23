@@ -68,13 +68,18 @@ export default function MoldBustersFortWorthWebsite() {
               We help homeowners identify moisture-related concerns, improve indoor air quality, perform InstaScope air quality screening, and address visible mold concerns with practical, professional service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-2xl text-base"><Phone className="w-5 h-5 mr-2" /> Call for Help</Button>
-              <Button size="lg" variant="secondary" className="rounded-2xl text-base"><CalendarDays className="w-5 h-5 mr-2" /> Request Appointment</Button>
-            </div>
-            <p className="text-xs text-slate-300 mt-6">
-              Mold Busters Fort Worth provides indoor air quality services, mold-related cleaning, moisture and HVAC observations, InstaScope air quality screening, and air quality treatment services. We do not provide regulated mold assessment protocols, regulatory project determinations, or post-remediation clearance certifications.
-            </p>
-          </div>
+  <a href="tel:2148024655">
+    <Button size="lg" className="rounded-2xl text-base">
+      <Phone className="w-5 h-5 mr-2" /> Call for Help
+    </Button>
+  </a>
+
+  <a href="#contact">
+    <Button size="lg" variant="secondary" className="rounded-2xl text-base">
+      <CalendarDays className="w-5 h-5 mr-2" /> Request Appointment
+    </Button>
+  </a>
+</div>
 
           <Card className="rounded-3xl shadow-2xl">
             <CardContent className="p-8">
@@ -243,16 +248,19 @@ export default function MoldBustersFortWorthWebsite() {
   </button>
 </form>
               <div className="mt-8 flex gap-4">
-                <Button className="rounded-2xl"><Phone className="w-4 h-4 mr-2" /> Call 214-802-4655</Button>
-                <Button variant="outline" className="rounded-2xl">Request Quote</Button>
-              </div>
-            </div>
-            <div className="bg-slate-900 text-white p-8 md:p-12">
-              <h3 className="text-2xl font-bold mb-4">Compliance Note</h3>
-              <p className="text-slate-200 text-sm leading-relaxed">
-                Mold Busters Fort Worth provides indoor air quality services, mold-related cleaning, laboratory sampling support, general moisture and HVAC observations, InstaScope screening, and air quality treatment services. We do not provide regulated mold assessment protocols, regulatory project determinations, or post-remediation clearance certifications. Projects involving larger areas of visible mold contamination may require appropriately licensed Texas mold professionals as required by law.
-              </p>
-            </div>
+  <a href="tel:2148024655">
+    <Button className="rounded-2xl">
+      <Phone className="w-4 h-4 mr-2" />
+      Call 214-802-4655
+    </Button>
+  </a>
+
+  <a href="#contact">
+    <Button variant="outline" className="rounded-2xl">
+      Request Quote
+    </Button>
+  </a>
+</div>
           </CardContent>
         </Card>
       </section>
