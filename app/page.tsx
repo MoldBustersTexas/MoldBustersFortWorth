@@ -182,8 +182,10 @@ export default function MoldBustersFortWorthWebsite() {
           </div>
           <Card className="rounded-3xl bg-slate-900 text-black shadow-xl">
             <CardContent className="p-8">
-              <AlertTriangle className="w-10 h-10 mb-4" />
-              <h3 className="text-2xl font-bold mb-3">Moisture comes first</h3>
+             <div className="flex items-center gap-3 mb-3">
+  <AlertTriangle className="w-8 h-8 text-yellow-500" />
+  <h3 className="text-2xl font-bold">Moisture comes first</h3>
+</div>
               <p className="text-slate-900">
                 Mold concerns usually come back to moisture. Our recommendations focus on correcting water intrusion, humidity, HVAC condensation, and airflow issues so the problem does not keep returning.
               </p>
