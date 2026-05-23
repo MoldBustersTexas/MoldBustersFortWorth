@@ -197,6 +197,51 @@ export default function MoldBustersFortWorthWebsite() {
                 <p><strong>Email:</strong> info@moldbustersfortworth.com</p>
                 <p><strong>Service Area:</strong> Dallas-Fort Worth Metroplex</p>
               </div>
+              <form
+  action="https://formsubmit.co/Info@MoldBustersFortWorth.com"
+  method="POST"
+  className="space-y-4 mt-8"
+>
+  <input type="hidden" name="_captcha" value="false" />
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    required
+    className="w-full border border-slate-300 rounded-xl px-4 py-3"
+  />
+
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Phone Number"
+    className="w-full border border-slate-300 rounded-xl px-4 py-3"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    className="w-full border border-slate-300 rounded-xl px-4 py-3"
+  />
+
+  <textarea
+    name="message"
+    placeholder="How can we help?"
+    rows={5}
+    required
+    className="w-full border border-slate-300 rounded-xl px-4 py-3"
+  />
+
+  <button
+    type="submit"
+    className="bg-slate-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition"
+  >
+    Submit Request
+  </button>
+</form>
               <div className="mt-8 flex gap-4">
                 <Button className="rounded-2xl"><Phone className="w-4 h-4 mr-2" /> Call 214-802-4655</Button>
                 <Button variant="outline" className="rounded-2xl">Request Quote</Button>
