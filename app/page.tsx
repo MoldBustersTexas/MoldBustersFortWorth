@@ -206,7 +206,34 @@ export default function MoldBustersFortWorthWebsite() {
           </div>
         </div>
       </section>
+<section className="bg-white py-16">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+    <p className="text-sm uppercase tracking-wide text-emerald-600 font-semibold mb-3">
+      5-Star Rated on Google
+    </p>
 
+    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      Trusted by Fort Worth Homeowners
+    </h2>
+
+    <p className="text-slate-600 max-w-2xl mx-auto mb-10">
+      Mold Busters Fort Worth is proud to be highly rated by local customers for indoor air quality, mold concerns, and remediation services.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-6">
+      {[
+        "Reasonable price and professional service.",
+        "Thorough, knowledgeable, and easy to work with.",
+        "Helpful guidance for mold and indoor air quality concerns.",
+      ].map((review) => (
+        <div key={review} className="bg-slate-50 rounded-3xl p-6 shadow-sm border">
+          <div className="text-yellow-500 text-2xl mb-3">★★★★★</div>
+          <p className="text-slate-700">"{review}"</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       <section id="contact" className="max-w-7xl mx-auto px-4 py-16">
   <Card className="rounded-3xl shadow-xl overflow-hidden">
     <CardContent className="p-8 md:p-12">
