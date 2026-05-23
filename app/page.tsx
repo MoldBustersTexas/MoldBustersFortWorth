@@ -55,52 +55,69 @@ export default function MoldBustersFortWorthWebsite() {
   </div>
 </header>
 
-      <section className="bg-gradient-to-br from-slate-900 to-slate-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-            <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm mb-6">
-              <ShieldCheck className="w-4 h-4" /> Trusted local indoor air quality help
+     <section className="bg-gradient-to-br from-slate-900 to-slate-700 text-white">
+  <div className="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+    {/* LEFT SIDE */}
+    <div>
+      <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm mb-6">
+        <ShieldCheck className="w-4 h-4" />
+        Trusted local indoor air quality help
+      </div>
+
+      <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+        Fort Worth Mold Removal & Indoor Air Quality Services
+      </h1>
+
+      <p className="text-lg text-slate-200 mb-8 leading-relaxed">
+        We help homeowners identify moisture-related concerns, improve indoor air quality,
+        perform InstaScope air quality screening, and address visible mold concerns with
+        practical, professional service.
+      </p>
+
+      <div className="flex flex-col sm:flex-row gap-4">
+        <a
+          href="tel:2148024655"
+          className="inline-flex items-center justify-center bg-slate-950 hover:bg-slate-800 px-6 py-3 rounded-2xl text-base font-medium transition"
+        >
+          <Phone className="w-5 h-5 mr-2" />
+          Call for Help
+        </a>
+        <a
+          href="#contact"
+          className="inline-flex items-center justify-center bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-2xl text-base font-medium transition"
+        >
+          <CalendarDays className="w-5 h-5 mr-2" />
+          Request Appointment
+        </a>
+      </div>
+    </div>
+    {/* RIGHT SIDE */}
+    <Card className="rounded-3xl shadow-2xl border-0 overflow-hidden">
+      <CardContent className="p-8">
+        <h2 className="text-2xl font-bold mb-6 text-slate-900">
+          Common Reasons Customers Call Us
+        </h2>
+
+        <div className="space-y-4">
+          {[
+            "Musty odors or humidity concerns",
+            "Visible mold around vents or walls",
+            "HVAC air quality concerns",
+            "Allergy-like symptoms indoors",
+            "Real-time InstaScope air quality screening",
+          ].map((item) => (
+            <div key={item} className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-emerald-500 mt-1" />
+              <span className="text-slate-700">{item}</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Fort Worth Mold Removal & Indoor Air Quality Services
-            </h1>
-            <p className="text-lg text-slate-200 mb-8">
-              We help homeowners identify moisture-related concerns, improve indoor air quality, perform InstaScope air quality screening, and address visible mold concerns with practical, professional service.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-  <a href="tel:2148024655">
-    <Button size="lg" className="rounded-2xl text-base">
-      <Phone className="w-5 h-5 mr-2" /> Call for Help
-    </Button>
-  </a>
-
-  <a href="#contact">
-    <Button size="lg" variant="secondary" className="rounded-2xl text-base">
-      <CalendarDays className="w-5 h-5 mr-2" /> Request Appointment
-    </Button>
-  </a>
-</div>
-
-          <Card className="rounded-3xl shadow-2xl">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-4">Common reasons customers call us</h2>
-              <div className="space-y-4">
-                {[
-                  "Musty odors or allergy-like symptoms indoors",
-                  "Visible growth near vents, cabinets, windows, or drywall",
-                  "HVAC condensation, air leaks, or humidity concerns",
-                  "Water damage history or suspected hidden moisture",
-                  "Need for practical air quality guidance before repairs"
-                ].map((item) => (
-                  <div key={item} className="flex gap-3 items-start">
-                    <CheckCircle className="w-5 h-5 mt-0.5 text-emerald-600" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          ))}
         </div>
-      </section>
+      </CardContent>
+    </Card>
+
+  </div>
+</section>
 
       <section id="services" className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
