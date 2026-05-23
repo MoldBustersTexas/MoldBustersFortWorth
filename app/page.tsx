@@ -69,7 +69,7 @@ export default function MoldBustersFortWorthWebsite() {
         Fort Worth Mold Removal & Indoor Air Quality Services
       </h1>
 
-      <p className="text-lg text-slate-900 mb-8 leading-relaxed">
+      <p className="text-lg text-slate-200 mb-8 leading-relaxed">
         We help homeowners identify moisture-related concerns, improve indoor air quality,
         perform InstaScope air quality screening, and address visible mold concerns with
         practical, professional service.
