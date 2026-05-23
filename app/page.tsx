@@ -106,7 +106,13 @@ export default function MoldBustersFortWorthWebsite() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          <ServiceCard icon={<Wind />} title="Indoor Air Quality & InstaScope Testing" text="Air and surface sampling options, InstaScope real-time air quality screening, and third-party laboratory reporting with practical explanation of findings." />
+         <a href="/mold-testing-fort-worth">
+  <ServiceCard
+    icon={<Wind />}
+    title="Indoor Air Quality & InstaScope Testing"
+    text="Air and surface sampling options, InstaScope real-time air quality screening, and third-party laboratory reporting with practical explanation of findings."
+  />
+</a>
           <ServiceCard icon={<Home />} title="Mold Removal & Air Quality Treatment" text="Mold-related cleaning, dry fog treatment options, odor reduction, and indoor air quality-focused services for homes and businesses throughout DFW." />
           <ServiceCard icon={<ShieldCheck />} title="HVAC & Moisture Review" text="General observations around humidity, condensation, air leaks, and HVAC-related contamination concerns." />
         </div>
