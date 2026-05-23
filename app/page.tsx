@@ -57,7 +57,6 @@ export default function MoldBustersFortWorthWebsite() {
 
       <section className="bg-gradient-to-br from-slate-900 to-slate-700 text-white">
         <div className="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-          <div>
             <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm mb-6">
               <ShieldCheck className="w-4 h-4" /> Trusted local indoor air quality help
             </div>
@@ -190,80 +189,70 @@ export default function MoldBustersFortWorthWebsite() {
       </section>
 
       <section id="contact" className="max-w-7xl mx-auto px-4 py-16">
-        <Card className="rounded-3xl shadow-xl overflow-hidden">
-          <CardContent className="p-0 grid md:grid-cols-2">
-            <div className="p-8 md:p-12">
-              <h2 className="text-3xl font-bold mb-4">Need help with mold or air quality concerns?</h2>
-              <p className="text-slate-600 mb-6">
-                Call today or request an appointment. We will help you understand the next practical step.
-              </p>
-              <div className="space-y-3 text-sm">
-                <p><strong>Phone:</strong> 214-802-4655</p>
-                <p><strong>Email:</strong> info@moldbustersfortworth.com</p>
-                <p><strong>Service Area:</strong> Dallas-Fort Worth Metroplex</p>
-              </div>
-              <form
-  action="https://formsubmit.co/Info@MoldBustersFortWorth.com"
-  method="POST"
-  className="space-y-4 mt-8"
->
-  <input type="hidden" name="_captcha" value="false" />
+  <Card className="rounded-3xl shadow-xl overflow-hidden">
+    <CardContent className="p-8 md:p-12">
+      <h2 className="text-3xl font-bold mb-4">
+        Need help with mold or air quality concerns?
+      </h2>
 
-  <input
-    type="text"
-    name="name"
-    placeholder="Name"
-    required
-    className="w-full border border-slate-300 rounded-xl px-4 py-3"
-  />
+      <p className="text-slate-600 mb-6">
+        Call today or request an appointment. We will help you understand the next practical step.
+      </p>
 
-  <input
-    type="tel"
-    name="phone"
-    placeholder="Phone Number"
-    className="w-full border border-slate-300 rounded-xl px-4 py-3"
-  />
+      <div className="space-y-3 text-sm mb-8">
+        <p><strong>Phone:</strong> 214-802-4655</p>
+        <p><strong>Email:</strong> info@moldbustersfortworth.com</p>
+        <p><strong>Service Area:</strong> Dallas-Fort Worth Metroplex</p>
+      </div>
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Email Address"
-    required
-    className="w-full border border-slate-300 rounded-xl px-4 py-3"
-  />
+      <form
+        action="https://formsubmit.co/Info@MoldBustersFortWorth.com"
+        method="POST"
+        className="space-y-4"
+      >
+        <input type="hidden" name="_captcha" value="false" />
 
-  <textarea
-    name="message"
-    placeholder="How can we help?"
-    rows={5}
-    required
-    className="w-full border border-slate-300 rounded-xl px-4 py-3"
-  />
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          className="w-full border border-slate-300 rounded-xl px-4 py-3"
+        />
 
-  <button
-    type="submit"
-    className="bg-slate-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition"
-  >
-    Submit Request
-  </button>
-</form>
-              <div className="mt-8 flex gap-4">
-  <a href="tel:2148024655">
-    <Button className="rounded-2xl">
-      <Phone className="w-4 h-4 mr-2" />
-      Call 214-802-4655
-    </Button>
-  </a>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          className="w-full border border-slate-300 rounded-xl px-4 py-3"
+        />
 
-  <a href="#contact">
-    <Button variant="outline" className="rounded-2xl">
-      Request Quote
-    </Button>
-  </a>
-</div>
-          </CardContent>
-        </Card>
-      </section>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+          className="w-full border border-slate-300 rounded-xl px-4 py-3"
+        />
+
+        <textarea
+          name="message"
+          placeholder="How can we help?"
+          rows={5}
+          required
+          className="w-full border border-slate-300 rounded-xl px-4 py-3"
+        />
+
+        <button
+          type="submit"
+          className="bg-slate-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition"
+        >
+          Submit Request
+        </button>
+      </form>
+    </CardContent>
+  </Card>
+</section>
 
       <footer className="bg-slate-950 text-slate-300 py-8">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-4 text-sm">
