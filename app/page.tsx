@@ -60,8 +60,19 @@ export default function MoldBustersFortWorthWebsite() {
   </div>
 </header>
 
-     <section className="bg-gradient-to-br from-slate-900 to-slate-700 text-white">
-  <div className="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
+     <section className="relative overflow-hidden text-white">
+      <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src="/hero-video.mp4" type="video/mp4" />
+</video>
+
+<div className="absolute inset-0 bg-slate-900/70"></div>
+  <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
 
     {/* LEFT SIDE */}
     <div>
