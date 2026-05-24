@@ -9,6 +9,28 @@ export const metadata = {
 
 export default function MoldRemovalFortWorthPage() {
   return (
+    <>
+  <header className="bg-black border-b border-zinc-800">
+    <div className="max-w-7xl mx-auto px-4 py-4">
+      <Link href="/" className="flex items-center gap-4">
+        <img
+          src="/logo.png"
+          alt="Mold Busters Fort Worth Logo"
+          className="w-16 h-16 object-contain"
+        />
+
+        <div>
+          <div className="text-2xl font-bold text-white">
+            Mold Busters Fort Worth
+          </div>
+
+          <div className="text-sm text-zinc-400">
+            Indoor Air Quality • Mold Concerns • HVAC Issues
+          </div>
+        </div>
+      </Link>
+    </div>
+  </header>
     <main className="bg-white text-slate-900 min-h-screen">
       <section className="bg-gradient-to-br from-slate-900 to-slate-700 text-white px-6 py-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -133,6 +155,7 @@ export default function MoldRemovalFortWorthPage() {
           </p>
         </div>
       </section>
-    </main>
-  );
+  </main>
+</>
+);
 }
