@@ -157,7 +157,13 @@ export default function MoldBustersFortWorthWebsite() {
     text="Mold-related cleaning, dry fog treatment options, odor reduction, and indoor air quality-focused services for homes and businesses throughout DFW."
   />
 </a>
-          <ServiceCard icon={<ShieldCheck />} title="HVAC & Moisture Review" text="General observations around humidity, condensation, air leaks, and HVAC-related contamination concerns." />
+          <a href="/hvac-moisture-review-fort-worth">
+  <ServiceCard
+    icon={<ShieldCheck />}
+    title="HVAC & Moisture Review"
+    text="General observations around humidity, condensation, air leaks, and HVAC-related contamination concerns, humidity measurements, moisture investigations, pressure diagnostics, and HVAC performance obervations."
+  />
+</a>
         </div>
       </section>
 
