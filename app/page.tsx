@@ -143,7 +143,7 @@ export default function MoldBustersFortWorthWebsite() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-         <a href="/mold-testing-fort-worth">
+         <a href="/indoor-air-quality-testing-fort-worth">
   <ServiceCard
     icon={<Wind />}
     title="Indoor Air Quality & InstaScope Testing"
