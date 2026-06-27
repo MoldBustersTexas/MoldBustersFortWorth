@@ -552,6 +552,175 @@ export default function IndoorAirQualityPage() {
     </div>
   </div>
 </section>
+{/* FAQ */}
+
+<section className="bg-slate-900 text-white py-24 px-6">
+  <div className="max-w-5xl mx-auto">
+
+    <div className="text-center mb-16">
+
+      <p className="uppercase tracking-widest text-emerald-400 font-semibold mb-3">
+        Frequently Asked Questions
+      </p>
+
+      <h2 className="text-5xl font-bold mb-6">
+        Indoor Air Quality Questions
+      </h2>
+
+      <p className="text-xl text-slate-300">
+        Answers to common questions homeowners ask before scheduling an
+        indoor air quality inspection.
+      </p>
+
+    </div>
+
+    <div className="space-y-8">
+
+      {[
+        [
+          "What is indoor air quality testing?",
+          "Indoor air quality testing evaluates environmental conditions inside a home or business. Depending on the inspection, this may include real-time air quality screening, moisture observations, HVAC evaluation, airborne particle trends, and laboratory sampling when appropriate."
+        ],
+
+        [
+          "Can poor indoor air quality make a home smell musty?",
+          "Yes. Persistent musty odors are commonly associated with moisture, microbial growth, HVAC issues, poor ventilation, or damp building materials."
+        ],
+
+        [
+          "Does InstaScope replace laboratory testing?",
+          "No. InstaScope provides real-time screening that helps identify abnormal airborne conditions. Laboratory analysis is still appropriate when confirmation of specific organisms is needed."
+        ],
+
+        [
+          "How long does an inspection take?",
+          "Inspection time varies depending on the size of the property and the concerns being investigated."
+        ],
+
+        [
+          "Do you inspect HVAC systems?",
+          "Yes. HVAC systems are an important part of indoor air quality. We evaluate airflow, drainage, humidity, air leakage, and conditions that may affect indoor air quality."
+        ],
+
+        [
+          "Can you investigate moisture problems?",
+          "Yes. Moisture observations are a key part of many indoor air quality investigations because elevated moisture often contributes to indoor environmental concerns."
+        ],
+
+      ].map(([question,answer])=>(
+        <div
+          key={question}
+          className="rounded-3xl bg-slate-800 p-8"
+        >
+
+          <h3 className="text-2xl font-bold mb-4">
+            {question}
+          </h3>
+
+          <p className="text-slate-300 leading-8">
+            {answer}
+          </p>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
+{/* SERVICE AREAS */}
+
+<section className="py-24 px-6 bg-white">
+
+  <div className="max-w-6xl mx-auto">
+
+    <div className="text-center mb-16">
+
+      <h2 className="text-5xl font-bold mb-6">
+        Proudly Serving Fort Worth & Surrounding Communities
+      </h2>
+
+      <p className="text-xl text-slate-600">
+        Indoor air quality testing throughout the Dallas–Fort Worth Metroplex.
+      </p>
+
+    </div>
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+      {[
+        "Fort Worth",
+        "Arlington",
+        "North Richland Hills",
+        "Keller",
+        "Southlake",
+        "Colleyville",
+        "Bedford",
+        "Hurst",
+        "Euless",
+        "Grapevine",
+        "Benbrook",
+        "Weatherford",
+        "Burleson",
+        "Aledo",
+        "Mansfield",
+        "Dallas",
+      ].map((city)=>(
+        <div
+          key={city}
+          className="rounded-2xl border border-slate-200 py-4 text-center font-semibold"
+        >
+          {city}
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* FINAL CTA */}
+
+<section className="bg-gradient-to-r from-emerald-600 to-emerald-500 py-24 px-6">
+
+  <div className="max-w-5xl mx-auto text-center text-white">
+
+    <h2 className="text-5xl font-bold mb-8">
+      Schedule Your Indoor Air Quality Inspection Today
+    </h2>
+
+    <p className="text-2xl leading-10 mb-12 opacity-95">
+
+      Whether you're experiencing musty odors, elevated humidity,
+      allergy symptoms, HVAC concerns, or simply want a better
+      understanding of your home's indoor environment,
+      Mold Busters Fort Worth is here to help.
+
+    </p>
+
+    <div className="flex flex-wrap justify-center gap-5">
+
+      <a
+        href="tel:2148024655"
+        className="bg-white text-emerald-700 px-10 py-5 rounded-full font-bold text-lg hover:bg-slate-100 transition"
+      >
+        Call 214-802-4655
+      </a>
+
+      <Link
+        href="/contact"
+        className="border-2 border-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-emerald-700 transition"
+      >
+        Request an Inspection
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
     </main>
   );
 }
