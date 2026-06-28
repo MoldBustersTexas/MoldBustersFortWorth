@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone, ShieldCheck, CheckCircle, Home } from "lucide-react";
 
-export const metadata = {
-  title: "Mold Removal Fort Worth | Mold Busters Fort Worth",
+export const metadata: Metadata = {
+  title: "Mold Remediation Fort Worth | Mold Removal & Indoor Air Quality",
   description:
-    "Professional mold removal, indoor air quality services, and Pure Maintenance dry fog treatment in Fort Worth and surrounding DFW areas.",
+    "Professional mold remediation in Fort Worth using moisture investigations, HVAC inspections, HEPA filtration, and advanced treatment methods to restore healthy indoor air quality.",
+  alternates: {
+    canonical: "/mold-removal-fort-worth",
+  },
 };
 
 export default function MoldRemovalFortWorthPage() {

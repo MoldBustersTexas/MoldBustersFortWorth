@@ -26,9 +26,42 @@ function Card({ children, className = "" }: any) {
 function CardContent({ children, className = "" }: any) {
   return <div className={className}>{children}</div>;
 }
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://moldbustersfortworth.com/#localbusiness",
+  name: "Mold Busters Fort Worth",
+  url: "https://moldbustersfortworth.com",
+  image: "https://moldbustersfortworth.com/logo.png",
+  logo: "https://moldbustersfortworth.com/logo.png",
+  telephone: "214-802-4655",
+  areaServed: [
+    "Fort Worth",
+    "Arlington",
+    "Mansfield",
+    "Benbrook",
+    "Keller",
+    "Southlake",
+    "Grapevine",
+    "Burleson",
+    "Weatherford",
+    "Dallas-Fort Worth"
+  ],
+  description:
+    "Professional mold testing, mold inspections, indoor air quality testing, HVAC inspections, moisture investigations, and mold remediation throughout Fort Worth and the Dallas-Fort Worth Metroplex.",
+  priceRange: "$$",
+};
 export default function MoldBustersFortWorthWebsite() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
+      
+      <Script
+  id="local-business-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(localBusinessSchema),
+  }}
+/>
       <Script
   src="https://elfsightcdn.com/platform.js"
   strategy="lazyOnload"
@@ -142,7 +175,16 @@ export default function MoldBustersFortWorthWebsite() {
             Built for homeowners who need straightforward help with indoor air quality, InstaScope testing, mold concerns, and moisture-related issues.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <a href="/mold-testing-fort-worth">
+  <ServiceCard
+    icon={<CheckCircle />}
+    title="Mold Testing in Fort Worth"
+    text="Professional mold testing using InstaScope real-time air quality analysis, moisture observations, HVAC evaluations, and optional laboratory confirmation."
+  />
+</a>
+
          <a href="/indoor-air-quality-testing-fort-worth">
   <ServiceCard
     icon={<Wind />}

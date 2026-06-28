@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Wind,
@@ -10,11 +11,13 @@ import {
   Phone,
 } from "lucide-react";
 
-export const metadata = {
-  title:
-    "Indoor Air Quality Testing Fort Worth | Mold Busters Fort Worth",
+export const metadata: Metadata = {
+  title: "Indoor Air Quality Testing Fort Worth | InstaScope Air Testing",
   description:
-    "Professional indoor air quality testing in Fort Worth. InstaScope real-time air quality screening, HVAC evaluations, moisture investigations, laboratory sampling, and practical recommendations for healthier indoor environments.",
+    "Professional indoor air quality testing in Fort Worth using InstaScope real-time analysis. Detect mold, allergens, VOCs, humidity, airborne particles, and HVAC-related air quality concerns.",
+  alternates: {
+    canonical: "/indoor-air-quality-testing-fort-worth",
+  },
 };
 
 export default function IndoorAirQualityPage() {
@@ -37,9 +40,7 @@ export default function IndoorAirQualityPage() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
-              Indoor Air Quality Testing
-              <br />
-              Fort Worth
+  Indoor Air Quality Testing in Fort Worth
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-10">

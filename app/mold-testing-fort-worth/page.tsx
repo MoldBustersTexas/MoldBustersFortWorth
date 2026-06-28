@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata = {
+
+export const metadata: Metadata = {
   title: "Mold Testing Fort Worth | Indoor Air Quality Testing",
   description:
-    "Mold Busters Fort Worth provides mold testing and complete indoor air quality testing using InstaScope real-time analysis, moisture observations, HVAC checks, and optional lab identification samples.",
+    "Mold Busters Fort Worth provides professional mold testing and complete indoor air quality testing using InstaScope real-time analysis, moisture investigations, HVAC inspections, and optional certified laboratory confirmation.",
+  alternates: {
+    canonical: "/mold-testing-fort-worth",
+  },
 };
 
 export default function MoldTestingFortWorthPage() {

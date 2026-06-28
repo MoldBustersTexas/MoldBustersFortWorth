@@ -3,9 +3,62 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Mold Busters Fort Worth",
+  metadataBase: new URL("https://moldbustersfortworth.com"),
+
+  title: {
+  default: "Mold Testing, Inspection & Remediation Fort Worth | Mold Busters",
+  template: "%s | Mold Busters",
+},
+
   description:
-    "Indoor air quality services, HVAC moisture concerns, mold-related cleaning, and InstaScope air quality screening in Fort Worth, Texas.",
+    "Professional mold testing, mold inspections, indoor air quality testing, HVAC inspections, and moisture investigations throughout Fort Worth and the Dallas–Fort Worth Metroplex. Featuring advanced InstaScope real-time air quality analysis.",
+
+  keywords: [
+    "mold testing Fort Worth",
+    "mold inspection Fort Worth",
+    "mold remediation Fort Worth",
+    "mold removal Fort Worth",
+    "indoor air quality testing",
+    "HVAC inspection",
+    "HVAC mold inspection",
+    "air quality testing",
+    "InstaScope",
+    "moisture inspection",
+    "Fort Worth mold company",
+  ],
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Mold Testing & Mold Inspection Fort Worth",
+    description:
+      "Professional mold testing, indoor air quality assessments, and HVAC inspections throughout Fort Worth using InstaScope technology.",
+    url: "https://moldbustersfortworth.com",
+    siteName: "Mold Busters Fort Worth",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Mold Testing & Mold Inspection Fort Worth",
+    description:
+      "Professional mold testing, indoor air quality assessments, and HVAC inspections throughout Fort Worth.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
