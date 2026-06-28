@@ -1,7 +1,12 @@
-export const metadata = {
-  title: "HVAC & Moisture Review Fort Worth | Humidity & HVAC Diagnostics",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "HVAC Mold Inspection Fort Worth | Moisture & Air Quality Review",
   description:
-    "HVAC and moisture evaluations in Fort Worth. Identify humidity issues, condensation, air leaks, negative pressure conditions, drainage concerns, and HVAC-related indoor air quality problems.",
+    "Professional mold testing in Fort Worth using InstaScope real-time analysis. Detect mold concerns, indoor air quality issues, HVAC contamination, moisture problems, and receive optional certified laboratory confirmation.",
+  alternates: {
+    canonical: "/hvac-moisture-review-fort-worth",
+  },
 };
 
 export default function HVACMoistureReviewPage() {
@@ -14,13 +19,13 @@ export default function HVACMoistureReviewPage() {
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            HVAC & Moisture Evaluations in Fort Worth
+             HVAC Mold & Moisture Inspection in Fort Worth
           </h1>
 
           <p className="text-xl text-slate-300 max-w-4xl">
-            Identify humidity problems, condensation issues, air leaks,
-            drainage concerns, negative pressure conditions, and HVAC-related
-            contamination before they become larger indoor air quality issues.
+            Identify hidden mold, moisture intrusion, air leaks, negative pressure,
+            condensation problems, duct contamination, and HVAC performance issues
+            before they affect your indoor air quality and comfort.
           </p>
         </div>
       </section>
