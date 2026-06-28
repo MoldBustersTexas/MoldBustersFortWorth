@@ -22,7 +22,30 @@ export const metadata: Metadata = {
 
 export default function IndoorAirQualityPage() {
   return (
-    <main className="bg-white text-slate-900">
+<>
+  <header className="bg-black border-b border-zinc-800">
+    <div className="max-w-6xl mx-auto px-6 py-4">
+      <Link href="/" className="flex items-center gap-4">
+        <img
+          src="/logo.png"
+          alt="Mold Busters Fort Worth Logo"
+          className="w-16 h-16 object-contain"
+        />
+
+        <div>
+          <div className="text-2xl font-bold text-white">
+            Mold Busters Fort Worth
+          </div>
+
+          <div className="text-sm text-zinc-400">
+            Indoor Air Quality • Mold Concerns • HVAC Issues
+          </div>
+        </div>
+      </Link>
+    </div>
+  </header>
+
+  <main className="bg-white text-slate-900">
 
       {/* HERO */}
 
@@ -722,7 +745,8 @@ export default function IndoorAirQualityPage() {
   </div>
 
 </section>
-    </main>
+   </main>
+</>
   );
 }
 
