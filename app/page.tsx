@@ -29,11 +29,11 @@ function CardContent({ children, className = "" }: any) {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://moldbustersfortworth.com/#localbusiness",
+  "@id": "https://www.moldbustersfortworth.com/#localbusiness",
   name: "Mold Busters Fort Worth",
-  url: "https://moldbustersfortworth.com",
-  image: "https://moldbustersfortworth.com/logo.png",
-  logo: "https://moldbustersfortworth.com/logo.png",
+  url: "https://www.moldbustersfortworth.com",
+  image: "https://www.moldbustersfortworth.com/logo.png",
+  logo: "https://www.moldbustersfortworth.com/logo.png",
   telephone: "214-802-4655",
   areaServed: [
     "Fort Worth",
@@ -63,7 +63,7 @@ export default function MoldBustersFortWorthWebsite() {
   }}
 />
       <Script
-  src="https://elfsightcdn.com/platform.js"
+  src="https://www.elfsightcdn.com/platform.js"
   strategy="lazyOnload"
 />
       <header className="bg-white border-b sticky top-0 z-50">
@@ -310,7 +310,7 @@ export default function MoldBustersFortWorthWebsite() {
       </div>
 
       <form
-        action="https://formsubmit.co/Info@MoldBustersFortWorth.com"
+        action="https://www.formsubmit.co/Info@MoldBustersFortWorth.com"
         method="POST"
         className="space-y-4"
       >
