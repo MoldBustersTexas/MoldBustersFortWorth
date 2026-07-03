@@ -61,66 +61,69 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessSchema = {
+const siteSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://www.moldbustersfortworth.com/#localbusiness",
-  name: "Mold Busters Fort Worth",
-  url: "https://www.moldbustersfortworth.com",
-  logo: "https://www.moldbustersfortworth.com/logo.png",
-  image: "https://www.moldbustersfortworth.com/logo.png",
-  telephone: "+12148024655",
-  priceRange: "$$",
-  areaServed: [
-    "Fort Worth, TX",
-    "Arlington, TX",
-    "Mansfield, TX",
-    "Benbrook, TX",
-    "Keller, TX",
-    "Southlake, TX",
-    "Grapevine, TX",
-    "Burleson, TX",
-    "Weatherford, TX",
-    "Dallas-Fort Worth Metroplex"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.moldbustersfortworth.com/#organization",
+      name: "Mold Busters Fort Worth",
+      url: "https://www.moldbustersfortworth.com",
+      logo: "https://www.moldbustersfortworth.com/logo.png",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+12148024655",
+        contactType: "customer service",
+        areaServed: "US-TX",
+        availableLanguage: ["English", "Spanish"],
+      },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.moldbustersfortworth.com/#localbusiness",
+      name: "Mold Busters Fort Worth",
+      url: "https://www.moldbustersfortworth.com",
+      logo: "https://www.moldbustersfortworth.com/logo.png",
+      image: "https://www.moldbustersfortworth.com/logo.png",
+      telephone: "+12148024655",
+      priceRange: "$$",
+      parentOrganization: {
+        "@id": "https://www.moldbustersfortworth.com/#organization",
+      },
+      areaServed: [
+        "Fort Worth, TX",
+        "Arlington, TX",
+        "Mansfield, TX",
+        "Benbrook, TX",
+        "Keller, TX",
+        "Southlake, TX",
+        "Grapevine, TX",
+        "Burleson, TX",
+        "Weatherford, TX",
+        "Dallas-Fort Worth Metroplex",
+      ],
+      description:
+        "Mold Busters Fort Worth provides mold testing, mold inspections, indoor air quality testing, HVAC moisture inspections, and mold remediation services throughout Fort Worth and the Dallas-Fort Worth Metroplex.",
+      knowsAbout: [
+        "Mold Testing",
+        "Mold Inspection",
+        "Indoor Air Quality Testing",
+        "HVAC Mold Inspection",
+        "Moisture Investigation",
+        "Mold Remediation",
+        "InstaScope Air Quality Testing",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.moldbustersfortworth.com/#website",
+      url: "https://www.moldbustersfortworth.com",
+      name: "Mold Busters Fort Worth",
+      publisher: {
+        "@id": "https://www.moldbustersfortworth.com/#organization",
+      },
+    },
   ],
-  description:
-    "Mold Busters Fort Worth provides mold testing, mold inspections, indoor air quality testing, HVAC moisture inspections, and mold remediation services throughout Fort Worth and the Dallas-Fort Worth Metroplex.",
-  knowsAbout: [
-    "Mold Testing",
-    "Mold Inspection",
-    "Indoor Air Quality Testing",
-    "HVAC Mold Inspection",
-    "Moisture Investigation",
-    "Mold Remediation",
-    "InstaScope Air Quality Testing"
-  ],
-  sameAs: []
-};
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://www.moldbustersfortworth.com/#organization",
-  name: "Mold Busters Fort Worth",
-  url: "https://www.moldbustersfortworth.com",
-  logo: "https://www.moldbustersfortworth.com/logo.png",
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+12148024655",
-    contactType: "customer service",
-    areaServed: "US-TX",
-    availableLanguage: ["English", "Spanish"],
-  },
-};
-
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://www.moldbustersfortworth.com/#website",
-  url: "https://www.moldbustersfortworth.com",
-  name: "Mold Busters Fort Worth",
-  publisher: {
-    "@id": "https://www.moldbustersfortworth.com/#organization",
-  },
 };
 export default function RootLayout({
   children,
@@ -130,55 +133,39 @@ export default function RootLayout({
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
-    <html lang="en">
-
-<body>
-
-  <Script
-    id="local-business-schema"
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify(localBusinessSchema),
+  <html lang="en">
+  <body>
+    <Script
+      id="site-schema"
+      type="application/ld+json"
+     dangerouslySetInnerHTML={{
+      __html: JSON.stringify(siteSchema),
     }}
   />
 
-  <Script
-    id="organization-schema"
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify(organizationSchema),
-    }}
-  />
+  {children}
 
-  <Script
-    id="website-schema"
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify(websiteSchema),
-    }}
-  />
+  {GA_ID && (
+  <>
+  
+    <Script
+      src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+      strategy="afterInteractive"
+    />
 
-        {children}
+    <Script id="google-analytics" strategy="afterInteractive">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-        {GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
+        gtag('config', '${GA_ID}');
+      `}
+    </Script>
+  </>
+)}
 
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', '${GA_ID}');
-              `}
-            </Script>
-          </>
-        )}
-      </body>
-    </html>
-  );
+    </body>
+  </html>
+);
 }
