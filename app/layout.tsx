@@ -3,7 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://moldbustersfortworth.com"),
+  metadataBase: new URL("https://www.moldbustersfortworth.com"),
 
   title: {
   default: "Mold Testing, Inspection & Remediation Fort Worth | Mold Busters",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Mold Testing & Mold Inspection Fort Worth",
     description:
       "Professional mold testing, indoor air quality assessments, and HVAC inspections throughout Fort Worth using InstaScope technology.",
-    url: "https://moldbustersfortworth.com",
+    url: "https://www.moldbustersfortworth.com",
     siteName: "Mold Busters Fort Worth",
     locale: "en_US",
     type: "website",
