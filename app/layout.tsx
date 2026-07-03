@@ -96,7 +96,32 @@ const localBusinessSchema = {
   ],
   sameAs: []
 };
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.moldbustersfortworth.com/#organization",
+  name: "Mold Busters Fort Worth",
+  url: "https://www.moldbustersfortworth.com",
+  logo: "https://www.moldbustersfortworth.com/logo.png",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+12148024655",
+    contactType: "customer service",
+    areaServed: "US-TX",
+    availableLanguage: ["English", "Spanish"],
+  },
+};
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.moldbustersfortworth.com/#website",
+  url: "https://www.moldbustersfortworth.com",
+  name: "Mold Busters Fort Worth",
+  publisher: {
+    "@id": "https://www.moldbustersfortworth.com/#organization",
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -106,14 +131,32 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>
-        <Script
-  id="local-business-schema"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(localBusinessSchema),
-  }}
-/>
+
+<body>
+
+  <Script
+    id="local-business-schema"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(localBusinessSchema),
+    }}
+  />
+
+  <Script
+    id="organization-schema"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(organizationSchema),
+    }}
+  />
+
+  <Script
+    id="website-schema"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(websiteSchema),
+    }}
+  />
 
         {children}
 
