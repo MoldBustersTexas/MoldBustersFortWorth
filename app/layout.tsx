@@ -61,6 +61,42 @@ export const metadata: Metadata = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.moldbustersfortworth.com/#localbusiness",
+  name: "Mold Busters Fort Worth",
+  url: "https://www.moldbustersfortworth.com",
+  logo: "https://www.moldbustersfortworth.com/logo.png",
+  image: "https://www.moldbustersfortworth.com/logo.png",
+  telephone: "+12148024655",
+  priceRange: "$$",
+  areaServed: [
+    "Fort Worth, TX",
+    "Arlington, TX",
+    "Mansfield, TX",
+    "Benbrook, TX",
+    "Keller, TX",
+    "Southlake, TX",
+    "Grapevine, TX",
+    "Burleson, TX",
+    "Weatherford, TX",
+    "Dallas-Fort Worth Metroplex"
+  ],
+  description:
+    "Mold Busters Fort Worth provides mold testing, mold inspections, indoor air quality testing, HVAC moisture inspections, and mold remediation services throughout Fort Worth and the Dallas-Fort Worth Metroplex.",
+  knowsAbout: [
+    "Mold Testing",
+    "Mold Inspection",
+    "Indoor Air Quality Testing",
+    "HVAC Mold Inspection",
+    "Moisture Investigation",
+    "Mold Remediation",
+    "InstaScope Air Quality Testing"
+  ],
+  sameAs: []
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,6 +107,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Script
+  id="local-business-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(localBusinessSchema),
+  }}
+/>
+
         {children}
 
         {GA_ID && (
