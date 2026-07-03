@@ -65,11 +65,16 @@ const siteSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://www.moldbustersfortworth.com/#organization",
-      name: "Mold Busters Fort Worth",
-      url: "https://www.moldbustersfortworth.com",
-      logo: "https://www.moldbustersfortworth.com/logo.png",
+  "@type": "Organization",
+  "@id": "https://www.moldbustersfortworth.com/#organization",
+  name: "Mold Busters Fort Worth",
+  alternateName: "Mold Busters",
+  url: "https://www.moldbustersfortworth.com",
+  logo: "https://www.moldbustersfortworth.com/logo.png",
+  image: "https://www.moldbustersfortworth.com/logo.png",
+  sameAs: [
+    "https://www.facebook.com/MoldBustersFortWorth"
+  ],
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+12148024655",
@@ -90,6 +95,10 @@ const siteSchema = {
       parentOrganization: {
         "@id": "https://www.moldbustersfortworth.com/#organization",
       },
+      branchOf: {
+        "@id": "https://www.moldbustersfortworth.com/#organization",
+      },
+
       areaServed: [
         "Fort Worth, TX",
         "Arlington, TX",
@@ -122,6 +131,9 @@ const siteSchema = {
       publisher: {
         "@id": "https://www.moldbustersfortworth.com/#organization",
       },
+      about: {
+        "@id": "https://www.moldbustersfortworth.com/#localbusiness",
+      },
     },
   ],
 };
@@ -147,7 +159,7 @@ export default function RootLayout({
 
   {GA_ID && (
   <>
-  
+
     <Script
       src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
       strategy="afterInteractive"
