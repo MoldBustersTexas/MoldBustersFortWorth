@@ -1,18 +1,109 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "HVAC Mold Inspection Fort Worth | Moisture & Air Quality Review",
+  title: "HVAC Moisture Review Fort Worth | Air Quality & Moisture Inspection",
   description:
-    "Professional mold testing in Fort Worth using InstaScope real-time analysis. Detect mold concerns, indoor air quality issues, HVAC contamination, moisture problems, and receive optional certified laboratory confirmation.",
+    "Professional HVAC moisture inspections in Fort Worth. We evaluate humidity, condensation, air leakage, pressure imbalances, drainage issues, and indoor air quality concerns using real-time diagnostics.",
+  keywords: [
+    "HVAC moisture inspection fort worth",
+    "HVAC inspection fort worth",
+    "HVAC humidity problems",
+    "air quality inspection",
+    "negative pressure testing",
+    "condensation inspection",
+    "HVAC air leaks",
+    "return plenum inspection",
+    "supply plenum inspection",
+    "moisture investigation",
+    "HVAC diagnostics",
+    "indoor humidity evaluation",
+  ],
   alternates: {
     canonical: "/hvac-moisture-review-fort-worth",
   },
+  openGraph: {
+    title: "HVAC Moisture Review Fort Worth | Mold Busters",
+    description:
+      "Professional HVAC moisture and indoor air quality evaluations throughout Fort Worth using real-time diagnostics.",
+    url: "https://www.moldbustersfortworth.com/hvac-moisture-review-fort-worth",
+    siteName: "Mold Busters Fort Worth",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.moldbustersfortworth.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "HVAC Moisture Review Fort Worth",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HVAC Moisture Review Fort Worth",
+    description:
+      "HVAC moisture, humidity, condensation, and indoor air quality inspections in Fort Worth.",
+    images: ["https://www.moldbustersfortworth.com/logo.png"],
+  },
 };
-
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What causes high indoor humidity?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "High indoor humidity may be caused by oversized equipment, blower speed settings, duct leakage, negative pressure, inadequate ventilation, moisture intrusion, or insufficient dehumidification.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can HVAC problems create mold?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Excess moisture, poor drainage, air leaks, and elevated humidity around HVAC systems can create conditions that support microbial growth if not corrected.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you inspect ductwork and plenums?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Accessible supply ducts, return ducts, plenums, boots, condensate drains, and air handlers are reviewed for conditions that may impact indoor air quality.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can negative pressure affect my home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Negative pressure can draw humid or contaminated air from attics, garages, crawlspaces, and wall cavities into the living space.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you perform moisture investigations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We evaluate humidity, condensation, drainage, airflow, pressure relationships, and building conditions to identify potential moisture sources.",
+      },
+    },
+  ],
+};
 export default function HVACMoistureReviewPage() {
   return (
     <>
+    <Script
+  id="hvac-moisture-faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(faqSchema),
+  }}
+/>
       <header className="bg-black border-b border-zinc-800">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <Link href="/" className="flex items-center gap-4">
@@ -43,7 +134,7 @@ export default function HVACMoistureReviewPage() {
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-             HVAC Mold & Moisture Inspection in Fort Worth
+             HVAC Moisture & Indoor Air Quality Inspection in Fort Worth
           </h1>
 
           <p className="text-xl text-slate-300 max-w-4xl">
@@ -144,7 +235,161 @@ export default function HVACMoistureReviewPage() {
           </p>
         </div>
       </section>
+<section className="px-6 py-16 bg-slate-50">
+  <div className="max-w-5xl mx-auto">
 
+    <div className="text-center mb-10">
+      <h2 className="text-3xl font-bold mb-3">
+        Frequently Asked Questions
+      </h2>
+
+      <p className="text-zinc-600 max-w-3xl mx-auto">
+        Answers to common questions about HVAC moisture investigations,
+        humidity problems, airflow, and indoor air quality.
+      </p>
+    </div>
+
+    <div className="space-y-6">
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          What causes high indoor humidity?
+        </h3>
+
+        <p className="text-zinc-600">
+          High indoor humidity may be caused by oversized equipment,
+          blower speed settings, duct leakage, negative pressure,
+          inadequate ventilation, moisture intrusion, or insufficient
+          dehumidification.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Can HVAC problems create mold?
+        </h3>
+
+        <p className="text-zinc-600">
+          Excess moisture, poor drainage, air leaks, and elevated humidity
+          around HVAC systems can create conditions that support microbial
+          growth if not corrected.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Do you inspect ductwork and plenums?
+        </h3>
+
+        <p className="text-zinc-600">
+          Yes. Accessible supply ducts, return ducts, plenums, boots,
+          condensate drains, and air handlers are reviewed for conditions
+          that may impact indoor air quality.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Can negative pressure affect my home?
+        </h3>
+
+        <p className="text-zinc-600">
+          Yes. Negative pressure can draw humid or contaminated air from
+          attics, garages, crawlspaces, and wall cavities into the living
+          space.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Do you perform moisture investigations?
+        </h3>
+
+        <p className="text-zinc-600">
+          Yes. We evaluate humidity, condensation, drainage, airflow,
+          pressure relationships, and building conditions to identify
+          potential moisture sources.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section className="px-6 py-16 bg-white">
+  <div className="max-w-6xl mx-auto">
+
+    <div className="text-center mb-10">
+      <h2 className="text-3xl font-bold mb-3">
+        Related Indoor Air Quality Services
+      </h2>
+
+      <p className="text-zinc-600 max-w-3xl mx-auto">
+        Explore additional services that help identify mold, moisture, HVAC
+        issues, and indoor environmental concerns.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-6">
+
+      <Link
+        href="/mold-testing-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Mold Testing
+        </h3>
+
+        <p className="text-zinc-600">
+          Real-time InstaScope testing combined with optional laboratory
+          identification for mold investigations.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+      <Link
+        href="/indoor-air-quality-testing-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Indoor Air Quality Testing
+        </h3>
+
+        <p className="text-zinc-600">
+          Evaluate airborne particles, humidity, VOCs, allergens, and
+          environmental conditions affecting comfort.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+      <Link
+        href="/mold-removal-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Mold Removal & Air Quality Treatment
+        </h3>
+
+        <p className="text-zinc-600">
+          Learn about cleaning, source correction, dry fog treatment, and
+          long-term indoor air quality improvements.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+    </div>
+
+  </div>
+</section>
       <section className="bg-slate-950 text-white py-16 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-6">

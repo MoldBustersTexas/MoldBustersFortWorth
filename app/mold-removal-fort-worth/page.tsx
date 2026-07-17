@@ -1,13 +1,51 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone, ShieldCheck, CheckCircle, Home } from "lucide-react";
-
 export const metadata: Metadata = {
-  title: "Mold Remediation Fort Worth | Mold Removal & Indoor Air Quality",
+  title: "Mold Removal Fort Worth | Air Quality Treatment & Dry Fog Services",
   description:
-    "Professional mold remediation in Fort Worth using moisture investigations, HVAC inspections, HEPA filtration, and advanced treatment methods to restore healthy indoor air quality.",
+    "Professional mold removal guidance, indoor air quality treatment, dry fog services, moisture investigations, HVAC inspections, and InstaScope real-time analysis throughout Fort Worth.",
+
+  keywords: [
+    "mold removal fort worth",
+    "mold remediation fort worth",
+    "air quality treatment",
+    "dry fog mold treatment",
+    "indoor air quality",
+    "mold cleanup fort worth",
+    "HVAC mold removal",
+    "Pure Maintenance",
+    "mold odor removal",
+  ],
+
   alternates: {
     canonical: "/mold-removal-fort-worth",
+  },
+
+  openGraph: {
+    title: "Mold Removal Fort Worth | Mold Busters Fort Worth",
+    description:
+      "Professional mold removal guidance, indoor air quality treatment, dry fog services, moisture investigations, and HVAC evaluations throughout Fort Worth.",
+    url: "https://www.moldbustersfortworth.com/mold-removal-fort-worth",
+    siteName: "Mold Busters Fort Worth",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.moldbustersfortworth.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Mold Removal Fort Worth",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Mold Removal Fort Worth",
+    description:
+      "Professional mold removal, indoor air quality treatment, and dry fog services in Fort Worth.",
+    images: ["https://www.moldbustersfortworth.com/logo.png"],
   },
 };
 
@@ -159,6 +197,167 @@ export default function MoldRemovalFortWorthPage() {
           </p>
         </div>
       </section>
+      <section className="px-6 py-16 bg-slate-50">
+  <div className="max-w-5xl mx-auto">
+    <div className="text-center mb-10">
+      <p className="text-sm uppercase tracking-widest text-emerald-600 font-semibold mb-3">
+        Frequently Asked Questions
+      </p>
+
+      <h2 className="text-3xl font-bold">
+        Mold Removal and Air Quality Treatment Questions
+      </h2>
+    </div>
+
+    <div className="space-y-6">
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          What is included in mold removal?
+        </h3>
+        <p className="text-zinc-600 leading-7">
+          The scope depends on the affected materials and moisture source.
+          Services may include source correction, removal or cleaning of
+          affected materials, HEPA filtration, HVAC-related cleaning, and
+          indoor air quality treatment.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Does dry fogging replace physical mold removal?
+        </h3>
+        <p className="text-zinc-600 leading-7">
+          No. Dry fog treatment does not replace removal of damaged or
+          contaminated materials. It is used as part of a broader cleaning and
+          indoor air quality process after source correction and physical
+          cleaning when appropriate.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Do you inspect the HVAC system during mold-related work?
+        </h3>
+        <p className="text-zinc-600 leading-7">
+          Yes. Accessible air handlers, plenums, ducts, boots, drainage
+          components, humidity conditions, and air leakage may be reviewed when
+          they could contribute to indoor air quality concerns.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          How do you know whether treatment worked?
+        </h3>
+        <p className="text-zinc-600 leading-7">
+          Verification may include visual review, moisture confirmation,
+          real-time InstaScope screening, and optional third-party laboratory
+          sampling when appropriate.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="text-xl font-semibold mb-2">
+          Do you provide services throughout the DFW area?
+        </h3>
+        <p className="text-zinc-600 leading-7">
+          Yes. Mold Busters Fort Worth serves Fort Worth and surrounding
+          Dallas–Fort Worth communities, subject to scheduling and project
+          scope.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="px-6 py-16 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-10">
+      <h2 className="text-3xl font-bold mb-3">
+        Related Indoor Air Quality Services
+      </h2>
+
+      <p className="text-zinc-600 max-w-3xl mx-auto">
+        Explore additional services that help identify mold, moisture, HVAC,
+        and indoor environmental concerns throughout your property.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-6">
+      <Link
+        href="/mold-testing-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md hover:-translate-y-1 duration-300 transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Mold Testing
+        </h3>
+
+        <p className="text-zinc-600">
+          Professional mold inspections using real-time InstaScope screening
+          with optional laboratory confirmation.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+      <Link
+        href="/indoor-air-quality-testing-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md hover:-translate-y-1 duration-300 transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Indoor Air Quality Testing
+        </h3>
+
+        <p className="text-zinc-600">
+          Real-time air quality screening, HVAC observations, moisture review,
+          and optional laboratory sampling.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+      <Link
+        href="/hvac-moisture-review-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md hover:-translate-y-1 duration-300 transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          HVAC & Moisture Review
+        </h3>
+
+        <p className="text-zinc-600">
+          Review humidity, condensation, drainage, pressure, airflow, and
+          HVAC-related indoor air quality concerns.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+    </div>
+  </div>
+</section>
+<section className="bg-emerald-600 text-white px-6 py-16 text-center">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-bold mb-4">
+      Schedule Mold Removal & Air Quality Services
+    </h2>
+
+    <p className="text-lg mb-8">
+      Call today to discuss mold-related cleaning, moisture concerns,
+      HVAC conditions, and indoor air quality treatment options.
+    </p>
+
+    <a
+      href="tel:2148024655"
+      className="inline-block bg-white text-emerald-700 font-semibold px-8 py-4 rounded-xl"
+    >
+      Call 214-802-4655
+    </a>
+  </div>
+</section>
    </main>
 </>
 );

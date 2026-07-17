@@ -1,18 +1,98 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Mold Testing Fort Worth | Indoor Air Quality Testing",
+  title: "Mold Testing Fort Worth | Real-Time Results & HVAC Inspection",
   description:
-    "Mold Busters Fort Worth provides professional mold testing and complete indoor air quality testing using InstaScope real-time analysis, moisture investigations, HVAC inspections, and optional certified laboratory confirmation.",
+    "Professional mold testing in Fort Worth using InstaScope real-time screening, HVAC inspections, moisture investigations, and optional laboratory confirmation. Same-day appointments available.",
+  keywords: [
+    "mold testing fort worth",
+    "mold inspection fort worth",
+    "mold testing near me",
+    "air quality testing fort worth",
+    "indoor air quality testing",
+    "HVAC mold inspection",
+    "InstaScope mold testing",
+    "moisture investigation",
+  ],
   alternates: {
     canonical: "/mold-testing-fort-worth",
   },
+  openGraph: {
+    title: "Mold Testing Fort Worth | Mold Busters Fort Worth",
+    description:
+      "Professional mold testing and indoor air quality testing throughout Fort Worth using real-time InstaScope technology.",
+    url: "https://www.moldbustersfortworth.com/mold-testing-fort-worth",
+    siteName: "Mold Busters Fort Worth",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.moldbustersfortworth.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Mold Testing Fort Worth",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mold Testing Fort Worth",
+    description:
+      "Professional mold testing, HVAC inspections and indoor air quality testing in Fort Worth.",
+    images: ["https://www.moldbustersfortworth.com/logo.png"],
+  },
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How much does mold testing cost in Fort Worth?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pricing typically starts at $400 depending on the size of the property and whether laboratory confirmation is requested. We provide real-time InstaScope screening and optional laboratory identification.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you inspect HVAC systems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We inspect air handlers, supply and return plenums, condensate systems, moisture conditions, and HVAC components that may contribute to indoor air quality concerns.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you tell if mold is behind a wall?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Moisture readings, thermal imaging, HVAC observations, air sampling, and environmental conditions can often indicate hidden moisture or possible concealed mold growth requiring further investigation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer same-day appointments?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Whenever scheduling allows, we offer same-day or next-day appointments throughout Fort Worth and the surrounding DFW area.",
+      },
+    },
+  ],
 };
 
 export default function MoldTestingFortWorthPage() {
   return (
   <>
+  <Script
+  id="mold-testing-faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(faqSchema),
+  }}
+/>
     <header className="bg-black border-b border-zinc-800">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <Link href="/" className="flex items-center gap-4">
@@ -135,7 +215,140 @@ export default function MoldTestingFortWorthPage() {
           </p>
         </div>
       </section>
+<section className="px-6 py-16 bg-slate-50">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl font-bold mb-10 text-center">
+      Frequently Asked Questions
+    </h2>
 
+    <div className="space-y-6">
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="font-semibold text-xl mb-2">
+          How much does mold testing cost in Fort Worth?
+        </h3>
+        <p>
+  Pricing typically starts at <strong>$400</strong> depending on the size
+  of the property and whether laboratory confirmation is requested. We
+  provide real-time InstaScope screening and optional laboratory
+  identification.
+</p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="font-semibold text-xl mb-2">
+          Do you inspect HVAC systems?
+        </h3>
+        <p>
+          Yes. We inspect air handlers, supply and return plenums, condensate
+          systems, moisture conditions, and other HVAC components that may
+          contribute to indoor air quality concerns.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="font-semibold text-xl mb-2">
+          Can you tell if mold is behind a wall?
+        </h3>
+        <p>
+          Moisture readings, thermal imaging, HVAC observations, air sampling,
+          and environmental conditions can often indicate hidden moisture or
+          possible concealed mold growth that may require further investigation.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-sm p-6">
+        <h3 className="font-semibold text-xl mb-2">
+          Do you offer same-day appointments?
+        </h3>
+        <p>
+          Whenever scheduling allows, we offer same-day or next-day
+          appointments throughout Fort Worth and the surrounding DFW area.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section className="px-6 py-16 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-10">
+      <h2 className="text-3xl font-bold mb-3">
+        Related Indoor Air Quality Services
+      </h2>
+      <p className="text-zinc-600 max-w-3xl mx-auto">
+        Explore additional services that may help identify moisture, HVAC, and
+        indoor air quality concerns throughout your property.
+</p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-6">
+      <Link
+        href="/indoor-air-quality-testing-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-md hover:border-green-600 hover:-translate-y-1 duration-300 transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Indoor Air Quality Testing
+        </h3>
+        <p className="text-zinc-600">
+          Real-time InstaScope screening, air and surface sampling options, and
+          practical explanations of indoor air quality findings.
+        </p>
+        <div className="mt-4">
+  <span className="text-green-700 font-semibold">
+    Learn More →
+  </span>
+
+  <p className="text-sm text-zinc-500 mt-2">
+    Air quality testing, airborne mold sampling, and InstaScope analysis.
+  </p>
+</div>
+      </Link>
+
+      <Link
+        href="/hvac-moisture-review-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-md hover:border-green-600 hover:-translate-y-1 duration-300 transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          HVAC & Moisture Review
+        </h3>
+        <p className="text-zinc-600">
+          Review humidity, condensation, drainage, pressure, and HVAC-related
+          conditions that may affect indoor air quality.
+        </p>
+        <div className="mt-4">
+  <span className="text-green-700 font-semibold">
+    Learn More →
+  </span>
+  <p className="text-sm text-zinc-500 mt-2">
+    Moisture investigations, HVAC inspections, pressure diagnostics, and humidity reviews.
+  </p>
+</div>
+      </Link>
+
+      <Link
+        href="/mold-removal-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-md hover:border-green-600 hover:-translate-y-1 duration-300 transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Mold Removal & Air Quality Treatment
+        </h3>
+        <p className="text-zinc-600">
+          Learn about cleaning, source correction, dry fog treatment options,
+          and air quality-focused services.
+        </p>
+        <div className="mt-4">
+  <span className="text-green-700 font-semibold">
+    Learn More →
+  </span>
+  <p className="text-sm text-zinc-500 mt-2">
+    Dry fog treatment, microbial reduction, and indoor air quality improvement.
+  </p>
+</div>
+      </Link>
+    </div>
+  </div>
+</section>
       <section className="px-6 py-16 bg-green-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">

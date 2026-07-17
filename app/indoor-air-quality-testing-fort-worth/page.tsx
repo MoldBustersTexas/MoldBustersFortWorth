@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import {
   Wind,
   ShieldCheck,
@@ -12,17 +13,101 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Indoor Air Quality Testing Fort Worth | InstaScope Air Testing",
+  title: "Indoor Air Quality Testing Fort Worth | InstaScope",
   description:
-    "Professional indoor air quality testing in Fort Worth using InstaScope real-time analysis. Detect mold, allergens, VOCs, humidity, airborne particles, and HVAC-related air quality concerns.",
+    "Professional indoor air quality testing in Fort Worth using real-time InstaScope screening, HVAC observations, moisture evaluation, and optional laboratory testing.",
   alternates: {
     canonical: "/indoor-air-quality-testing-fort-worth",
   },
+  openGraph: {
+    title: "Indoor Air Quality Testing Fort Worth | Mold Busters",
+    description:
+      "Real-time InstaScope screening, HVAC observations, moisture evaluation, and optional laboratory testing throughout Fort Worth and DFW.",
+    url: "https://www.moldbustersfortworth.com/indoor-air-quality-testing-fort-worth",
+    siteName: "Mold Busters Fort Worth",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.moldbustersfortworth.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Indoor Air Quality Testing in Fort Worth",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indoor Air Quality Testing Fort Worth",
+    description:
+      "Real-time InstaScope screening, HVAC observations, moisture evaluation, and optional laboratory testing in Fort Worth.",
+    images: ["https://www.moldbustersfortworth.com/logo.png"],
+  },
 };
-
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is indoor air quality testing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Indoor air quality testing evaluates environmental conditions inside a home or business. Depending on the inspection, this may include real-time air quality screening, moisture observations, HVAC evaluation, and optional laboratory sampling.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can poor indoor air quality make a home smell musty?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Persistent musty odors are commonly associated with moisture, microbial growth, HVAC issues, poor ventilation, or damp building materials.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does InstaScope replace laboratory testing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. InstaScope provides real-time screening that helps identify abnormal airborne conditions. Laboratory analysis is still appropriate when confirmation or additional identification is needed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does an inspection take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Inspection time varies depending on the size of the property and the concerns being investigated.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you inspect HVAC systems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. HVAC systems are an important part of indoor air quality. We evaluate airflow, drainage, humidity, air leakage, and conditions that may affect indoor air quality.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you investigate moisture problems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Moisture observations are a key part of many indoor air quality investigations because elevated moisture often contributes to indoor environmental concerns.",
+      },
+    },
+  ],
+};
 export default function IndoorAirQualityPage() {
   return (
 <>
+<Script
+  id="indoor-air-quality-faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(faqSchema),
+  }}
+/>
   <header className="bg-black border-b border-zinc-800">
     <div className="max-w-6xl mx-auto px-6 py-4">
       <Link href="/" className="flex items-center gap-4">
@@ -704,7 +789,80 @@ export default function IndoorAirQualityPage() {
   </div>
 
 </section>
+<section className="px-6 py-16 bg-white">
+  <div className="max-w-6xl mx-auto">
 
+    <div className="text-center mb-10">
+      <h2 className="text-3xl font-bold mb-3">
+        Related Indoor Air Quality Services
+      </h2>
+
+      <p className="text-zinc-600 max-w-3xl mx-auto">
+        Explore additional services that help identify mold, moisture, HVAC,
+        and indoor environmental concerns throughout your property.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-6">
+
+      <Link
+        href="/mold-testing-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Mold Testing
+        </h3>
+
+        <p className="text-zinc-600">
+          Professional mold inspections using real-time InstaScope analysis
+          with optional laboratory confirmation.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+      <Link
+        href="/hvac-moisture-review-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          HVAC & Moisture Review
+        </h3>
+
+        <p className="text-zinc-600">
+          Identify humidity, negative pressure, airflow issues,
+          condensation, and HVAC-related indoor air quality concerns.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+      <Link
+        href="/mold-removal-fort-worth"
+        className="block bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-green-600 hover:shadow-md transition"
+      >
+        <h3 className="text-xl font-semibold mb-2">
+          Mold Removal & Air Quality Treatment
+        </h3>
+
+        <p className="text-zinc-600">
+          Learn about source correction, cleaning, dry fog treatment,
+          and long-term indoor air quality improvements.
+        </p>
+
+        <p className="mt-4 text-green-700 font-semibold">
+          Learn More →
+        </p>
+      </Link>
+
+    </div>
+
+  </div>
+</section>
 {/* FINAL CTA */}
 
 <section className="bg-gradient-to-r from-emerald-600 to-emerald-500 py-24 px-6">

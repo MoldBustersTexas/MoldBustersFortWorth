@@ -1,6 +1,15 @@
 import React from "react";
 import Script from "next/script";
+import type { Metadata } from "next";
 import { Phone, ShieldCheck, Wind, Home, CheckCircle, MapPin, Star, CalendarDays, AlertTriangle } from "lucide-react";
+export const metadata: Metadata = {
+  title: "Mold Testing Fort Worth | Indoor Air Quality & HVAC Inspections",
+  description:
+    "Professional mold testing in Fort Worth using real-time InstaScope technology. Indoor air quality testing, HVAC moisture inspections, and laboratory confirmation available. Call today.",
+  alternates: {
+    canonical: "/",
+  },
+};
 function Button({ children, className = "", variant = "default", size = "default", ...props }: any) {
   const base = "inline-flex items-center justify-center px-4 py-2 font-medium transition";
   const styles =
@@ -63,8 +72,9 @@ export default function MoldBustersFortWorthWebsite() {
   }}
 />
       <Script
-  src="https://www.elfsightcdn.com/platform.js"
-  strategy="lazyOnload"
+  src="https://static.elfsight.com/platform/platform.js"
+  strategy="afterInteractive"
+  data-use-service-core
 />
       <header className="bg-white border-b sticky top-0 z-50">
   <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -115,13 +125,11 @@ export default function MoldBustersFortWorthWebsite() {
       </div>
 
       <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-        Fort Worth Mold Removal & Indoor Air Quality Services
+        Concerned About Mold or Indoor Air Quality? Get Professional Answers Today
       </h1>
 
       <p className="text-lg text-slate-200 mb-8 leading-relaxed">
-        We help homeowners identify moisture-related concerns, improve indoor air quality,
-        perform InstaScope air quality screening, and address visible mold concerns with
-        practical, professional service.
+        Professional mold testing, HVAC inspections, and real-time indoor air quality analysis throughout Fort Worth and the DFW Metroplex using advanced InstaScope technology. Laboratory confirmation available when needed.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4">
