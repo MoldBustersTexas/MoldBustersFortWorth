@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Mold Testing Fort Worth, TX | InstaScope & HVAC Inspections",
   description:
-    "Mold testing and indoor air quality inspections in Fort Worth. Whole-home InstaScope screening starts at $399, with HVAC inspection included and optional lab samples.",
+  "Mold inspections in Fort Worth starting at $399. Choose isolated mold testing or whole-home InstaScope screening. HVAC inspection included. Call 214-802-4655.",
   alternates: { canonical: "/mold-testing-fort-worth" },
   openGraph: {
     title: "Mold Testing in Fort Worth | Mold Busters Fort Worth",
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "How much does mold testing cost in Fort Worth?",
     answer:
-      "Whole-home InstaScope screening starts at $399 for homes up to 2,000 square feet, $549 for 2,001–3,500 square feet, and $699 for 3,501–5,000 square feet. Larger homes receive a custom quote. A separate $399 isolated inspection option is also available.",
+  "Mold inspections start at $399. Our isolated mold inspection includes three physical samples and one HVAC air handler inspection. Whole-home InstaScope inspections also start at $399 for properties up to 2,000 square feet and include unlimited InstaScope samples and one HVAC air handler inspection. Whole-home pricing is $549 for 2,001–3,500 square feet and $699 for 3,501–5,000 square feet. Larger properties receive a custom quote. Additional HVAC inspections are $75 each, and optional laboratory identification samples are $50 each.",
   },
   {
     question: "What is included in a whole-home InstaScope inspection?",
@@ -101,9 +101,12 @@ export default function MoldTestingFortWorthPage() {
             <p className="text-sm uppercase tracking-wide text-green-400 mb-4">Fort Worth Mold Testing & Indoor Air Quality</p>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Mold Testing in Fort Worth, TX</h1>
             <p className="text-xl max-w-3xl text-zinc-300 leading-8 mb-8">
-              Understand your indoor environment with whole-home InstaScope particle screening,
-              HVAC inspection, moisture observations, and optional laboratory identification samples.
-              Clear findings, practical next steps, and transparent inspection pricing.
+             Whether you're concerned about mold in one specific area or want
+a comprehensive evaluation of your entire home, we offer inspection
+options starting at $399. Choose an isolated mold inspection with
+physical laboratory samples or whole-home InstaScope screening with
+real-time air quality analysis. Both options include an inspection
+of one HVAC air handler, with additional testing available.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/#contact" className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold px-7 py-4 rounded-xl">
@@ -118,7 +121,7 @@ export default function MoldTestingFortWorthPage() {
 
         <section className="px-6 py-16" aria-labelledby="pricing-heading">
           <div className="max-w-6xl mx-auto">
-            <h2 id="pricing-heading" className="text-3xl font-bold mb-4">Whole-Home InstaScope Inspection Pricing</h2>
+            <h2 id="pricing-heading" className="text-3xl font-bold mb-4">Mold Inspection Pricing in Fort Worth — Starting at $399</h2>
             <p className="text-lg text-zinc-700 mb-8 max-w-3xl">
               Every whole-home package includes unlimited InstaScope samples and one HVAC air handler inspection.
             </p>
@@ -180,7 +183,7 @@ export default function MoldTestingFortWorthPage() {
 
         <section className="px-6 py-16">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-10 text-center">What Happens During Your Inspection?</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">What to Expect During Your Mold Inspection in Fort Worth</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {steps.map((step, index) => (
                 <div key={step.title} className="rounded-xl border border-zinc-200 p-7">
