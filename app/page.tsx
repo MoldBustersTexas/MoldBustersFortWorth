@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
   title: "Mold Testing & Mold Removal Fort Worth | Mold Busters",
   description:
-    "Professional mold testing in Fort Worth using real-time InstaScope technology. Indoor air quality testing, HVAC moisture inspections, and laboratory confirmation available. Call today.",
+    "Professional mold inspections, mold testing, and mold removal in Fort Worth, TX. Real-time InstaScope testing, HVAC contamination assessments, and indoor air quality treatments. Call 214-802-4655.",
   alternates: {
     canonical: "/",
   },
@@ -130,12 +130,15 @@ export default function MoldBustersFortWorthWebsite() {
       </div>
 
       <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-        Mold Testing, Mold Removal & Indoor Air Quality Services in Fort Worth
+        Mold Inspection, Mold Testing & Mold Removal in Fort Worth, TX
       </h1>
 
       <p className="text-lg text-slate-200 mb-8 leading-relaxed">
-        Professional mold testing, HVAC inspections, and real-time indoor air quality analysis throughout Fort Worth and the DFW Metroplex using advanced InstaScope technology. Laboratory confirmation available when needed.
-      </p>
+  Professional mold inspections, real-time InstaScope testing, mold
+  removal, HVAC contamination cleaning, and indoor air quality
+  treatments throughout Fort Worth and the DFW Metroplex.
+  Laboratory testing is available when needed.
+</p>
 
       <div className="flex flex-col sm:flex-row gap-4">
         <a
@@ -150,7 +153,7 @@ export default function MoldBustersFortWorthWebsite() {
           className="inline-flex items-center justify-center bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-2xl text-base font-medium transition"
         >
           <CalendarDays className="w-5 h-5 mr-2" />
-          Request Appointment
+          Schedule a Mold Inspection
         </a>
       </div>
     </div>
