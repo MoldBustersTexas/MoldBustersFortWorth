@@ -2,6 +2,7 @@ import React from "react";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Phone, ShieldCheck, Wind, Home, CheckCircle, MapPin, Star, CalendarDays, AlertTriangle } from "lucide-react";
+import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
   title: "Mold Testing Fort Worth | Indoor Air Quality & HVAC Inspections",
   description:
@@ -316,52 +317,7 @@ export default function MoldBustersFortWorthWebsite() {
         <p><strong>Email:</strong> info@moldbustersfortworth.com</p>
         <p><strong>Service Area:</strong> Dallas-Fort Worth Metroplex</p>
       </div>
-
-      <form
-        action="https://www.formsubmit.co/Info@MoldBustersFortWorth.com"
-        method="POST"
-        className="space-y-4"
-      >
-        <input type="hidden" name="_captcha" value="false" />
-
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-          className="w-full border border-slate-300 rounded-xl px-4 py-3"
-        />
-
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-          className="w-full border border-slate-300 rounded-xl px-4 py-3"
-        />
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          required
-          className="w-full border border-slate-300 rounded-xl px-4 py-3"
-        />
-
-        <textarea
-          name="message"
-          placeholder="How can we help?"
-          rows={5}
-          required
-          className="w-full border border-slate-300 rounded-xl px-4 py-3"
-        />
-
-        <button
-          type="submit"
-          className="bg-slate-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition"
-        >
-          Submit Request
-        </button>
-      </form>
+<ContactForm />
     </CardContent>
   </Card>
 </section>
