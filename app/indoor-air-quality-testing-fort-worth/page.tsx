@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Indoor Air Quality Testing Fort Worth | InstaScope",
-  description:
-    "Professional indoor air quality testing in Fort Worth using real-time InstaScope screening, HVAC observations, moisture evaluation, and optional laboratory testing.",
+  title: "Indoor Air Quality Testing Fort Worth | InstaScope Inspections",
+description:
+  "Professional indoor air quality testing in Fort Worth, TX. Whole-home InstaScope inspections, HVAC contamination assessments, moisture evaluations, and optional laboratory testing. Call 214-802-4655.",
   alternates: {
     canonical: "/indoor-air-quality-testing-fort-worth",
   },
@@ -152,10 +152,13 @@ export default function IndoorAirQualityPage() {
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-10">
-              Professional indoor air quality evaluations using real-time
-              screening technology, moisture investigations, HVAC observations,
-              and laboratory testing when appropriate.
-            </p>
+  Get answers about the air you breathe with our comprehensive
+  whole-home InstaScope inspections. We provide real-time air
+  quality screening, HVAC contamination assessments, and moisture
+  investigations to help identify potential problems throughout
+  your property. Optional laboratory testing is available for
+  additional identification and confirmation.
+</p>
 
             <div className="flex flex-wrap gap-4">
 
@@ -168,11 +171,11 @@ export default function IndoorAirQualityPage() {
               </a>
 
               <Link
-                href="/mold-testing-fort-worth"
-                className="rounded-full border border-white/30 px-8 py-4 hover:bg-white/10 transition"
-              >
-                Mold Testing
-              </Link>
+  href="/#contact"
+  className="rounded-full bg-white text-slate-900 px-8 py-4 font-semibold hover:bg-slate-100 transition"
+>
+  Request an Air Quality Inspection
+</Link>
 
             </div>
 
@@ -383,6 +386,72 @@ export default function IndoorAirQualityPage() {
           </div>
         </div>
       </section>
+      
+{/* INSPECTION OPTIONS */}
+<section className="bg-slate-50 py-20 px-6">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold mb-6">
+        Choose the Right Indoor Air Quality Inspection
+      </h2>
+      <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+        Whether you are concerned about one area or your entire property,
+        we offer inspection options to help identify potential air quality,
+        mold, HVAC, and moisture-related concerns.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-8">
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <h3 className="text-2xl font-bold mb-4">
+          Whole-Home InstaScope Inspection
+        </h3>
+        <p className="text-slate-600 mb-6">
+          Comprehensive real-time screening throughout your property.
+        </p>
+        <ul className="space-y-3 text-slate-700 mb-8">
+          <li>✓ Unlimited InstaScope screening samples</li>
+          <li>✓ One HVAC air handler inspection included</li>
+          <li>✓ Moisture and indoor air quality observations</li>
+          <li>✓ Optional laboratory identification samples</li>
+        </ul>
+        <Link
+          href="/#contact"
+          className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition"
+        >
+          Request Whole-Home Inspection
+        </Link>
+      </div>
+
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <h3 className="text-2xl font-bold mb-4">
+          Isolated Mold Inspection
+        </h3>
+        <p className="text-3xl font-bold text-emerald-600 mb-4">
+          Starting at $399
+        </p>
+        <ul className="space-y-3 text-slate-700 mb-8">
+          <li>✓ Three physical samples included</li>
+          <li>✓ One HVAC air handler inspection included</li>
+          <li>✓ Focused evaluation of a specific concern</li>
+          <li>✓ Additional physical samples: $50 each</li>
+        </ul>
+        <Link
+          href="/#contact"
+          className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition"
+        >
+          Request Isolated Inspection
+        </Link>
+      </div>
+    </div>
+
+    <p className="text-center text-slate-500 mt-8">
+      Additional HVAC air handler inspections are $75 each.
+      Optional laboratory identification samples are $50 each.
+    </p>
+  </div>
+</section>
+
       {/* INSTA VS TRADITIONAL */}
 
 <section className="py-24 px-6 bg-white">
