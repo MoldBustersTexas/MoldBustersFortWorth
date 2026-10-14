@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Phone, ShieldCheck, Wind, Home, CheckCircle, MapPin, Star, CalendarDays, AlertTriangle } from "lucide-react";
 import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
-  title: "Mold Testing Fort Worth | Indoor Air Quality & HVAC Inspections",
+  title: "Mold Testing & Mold Removal Fort Worth | Mold Busters",
   description:
     "Professional mold testing in Fort Worth using real-time InstaScope technology. Indoor air quality testing, HVAC moisture inspections, and laboratory confirmation available. Call today.",
   alternates: {
@@ -98,9 +98,13 @@ export default function MoldBustersFortWorthWebsite() {
       <a href="#contact">Contact</a>
     </div>
 
-    <Button className="rounded-2xl">
-      <Phone className="w-4 h-4 mr-2" /> Call 214-802-4655
-    </Button>
+    <a
+  href="tel:2148024655"
+  className="inline-flex items-center justify-center bg-slate-900 text-white hover:bg-slate-800 px-4 py-2 rounded-2xl font-medium transition"
+>
+  <Phone className="w-4 h-4 mr-2" />
+  Call 214-802-4655
+</a>
   </div>
 </header>
 
@@ -126,7 +130,7 @@ export default function MoldBustersFortWorthWebsite() {
       </div>
 
       <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-        Concerned About Mold or Indoor Air Quality? Get Professional Answers Today
+        Mold Testing, Mold Removal & Indoor Air Quality Services in Fort Worth
       </h1>
 
       <p className="text-lg text-slate-200 mb-8 leading-relaxed">
@@ -205,7 +209,7 @@ export default function MoldBustersFortWorthWebsite() {
   <ServiceCard
     icon={<Home />}
     title="Mold Removal & Air Quality Treatment"
-    text="Mold-related cleaning, dry fog treatment options, odor reduction, and indoor air quality-focused services for homes and businesses throughout DFW."
+    text="Professional mold-related cleaning, HEPA filtration, HVAC contamination cleaning, moisture-control recommendations, and pressurized microbial treatment for qualifying projects in Fort Worth and surrounding DFW communities."
   />
 </a>
           <a href="/hvac-moisture-review-fort-worth">
@@ -259,13 +263,13 @@ export default function MoldBustersFortWorthWebsite() {
               ))}
             </div>
           </div>
-          <Card className="rounded-3xl bg-slate-900 text-black shadow-xl">
+          <Card className="rounded-3xl bg-slate-900 text-white shadow-xl">
             <CardContent className="p-8">
              <div className="flex items-center gap-3 mb-3">
   <AlertTriangle className="w-8 h-8 text-yellow-500" />
-  <h3 className="text-2xl font-bold">Moisture comes first</h3>
+  <h3 className="text-white">Moisture comes first</h3>
 </div>
-              <p className="text-slate-900">
+              <p className="text-slate-200">
                 Mold concerns usually come back to moisture. Our recommendations focus on correcting water intrusion, humidity, HVAC condensation, and airflow issues so the problem does not keep returning.
               </p>
             </CardContent>
