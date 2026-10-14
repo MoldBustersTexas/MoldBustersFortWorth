@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Phone, ShieldCheck, CheckCircle, Home } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Mold Removal Fort Worth | Small-Area Cleaning & Air Quality",
-  description:
-    "Mold-related cleaning for small affected areas, HVAC contamination services, moisture solutions and indoor air quality treatment in Fort Worth. Request an assessment.",
+  title: "Mold Removal Fort Worth, TX | Mold Busters",
+description:
+  "Mold removal and cleaning in Fort Worth, TX. qualified mold treatment, HVAC contamination cleaning, moisture assessments, and indoor air quality services. Call 214-802-4655.",
   alternates: { canonical: "/mold-removal-fort-worth" },
   openGraph: {
     title: "Mold Removal Fort Worth | Mold Busters Fort Worth",
@@ -15,13 +15,14 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
 const concerns = [
-  "Visible spotting on small sections of walls or trim",
-  "Musty odors after leaks or humidity problems",
-  "Contamination concerns in accessible HVAC components",
-  "Recurring condensation or drainage problems",
-  "Questions about air quality after cleaning or repairs",
+  "Visible mold growth on walls, ceilings, or trim",
+  "Persistent musty odors in your home or business",
+  "Mold or microbial contamination inside HVAC systems",
+  "Water damage, leaks, or recurring moisture problems",
+  "Mold concerns after flooding or plumbing repairs",
+  "Poor indoor air quality or recurring humidity issues",
+  "Mold returning after previous cleaning or treatment",
 ];
 
 const steps = [
@@ -63,14 +64,19 @@ export default function MoldRemovalFortWorthPage() {
               <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm mb-6">
                 <ShieldCheck className="w-4 h-4" /> Focused Mold Cleaning & Indoor Air Quality Services
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">Mold Removal & Air Quality Treatment in Fort Worth, TX</h1>
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">Mold Removal & Indoor Air Quality Services in Fort Worth, TX</h1>
               <p className="text-lg text-slate-200 leading-relaxed mb-6">
-                From localized mold concerns to HVAC contamination and recurring moisture problems, we help Fort Worth property owners understand the cause and select appropriate cleaning and air quality services.
+                Concerned about mold, musty odors, or HVAC contamination in your home?
+Mold Busters Fort Worth provides professional mold inspections,
+qualified mold removal, HVAC cleaning, and indoor air quality treatments.
+We identify potential moisture sources, address qualifying affected areas,
+and help you improve your indoor environment. Call 214-802-4655
+to schedule an inspection.
               </p>
               <p className="text-slate-300 mb-8">We focus on qualifying small affected areas and indoor air quality services—not large-scale, regulated mold remediation projects.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:2148024655" className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-2xl text-white font-semibold transition"><Phone className="w-5 h-5 mr-2" /> Call 214-802-4655</a>
-                <Link href="/#contact" className="inline-flex items-center justify-center bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-2xl font-semibold transition">Request an Estimate Online</Link>
+                <Link href="/#contact" className="inline-flex items-center justify-center bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-2xl font-semibold transition">Schedule a Mold Inspection</Link>
               </div>
             </div>
             <div className="bg-white rounded-3xl shadow-2xl p-8 text-slate-900">
@@ -149,7 +155,7 @@ export default function MoldRemovalFortWorthPage() {
             <p className="text-lg mb-8">Tell us what you're seeing and where the concern is located. We'll help determine whether your project fits our services and discuss the next step.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:2148024655" className="inline-block bg-white text-emerald-800 font-semibold px-8 py-4 rounded-xl">Call 214-802-4655</a>
-              <Link href="/#contact" className="inline-block bg-slate-900 text-white font-semibold px-8 py-4 rounded-xl">Request an Estimate Online</Link>
+              <Link href="/#contact" className="inline-block bg-slate-900 text-white font-semibold px-8 py-4 rounded-xl"> Schedule a Mold Inspection</Link>
             </div>
           </div>
         </section>
