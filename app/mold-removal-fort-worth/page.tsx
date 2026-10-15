@@ -5,8 +5,8 @@ import { Phone, ShieldCheck, CheckCircle, Home } from "lucide-react";
 export const metadata: Metadata = {
   title: "Mold Removal Fort Worth, TX | Mold Busters",
 description:
-  "Mold removal and cleaning in Fort Worth, TX. qualified mold treatment, HVAC contamination cleaning, moisture assessments, and indoor air quality services. Call 214-802-4655.",
-  alternates: { canonical: "/mold-removal-fort-worth" },
+  "Mold removal in Fort Worth, TX. Qualified mold treatments, HVAC contamination cleaning, mold inspections, and indoor air quality services. Call 214-802-4655.",
+alternates: { canonical: "/mold-removal-fort-worth" },
   openGraph: {
     title: "Mold Removal Fort Worth | Mold Busters Fort Worth",
     description: "Small-area mold cleaning, HVAC cleaning and indoor air quality treatment in Fort Worth.",
