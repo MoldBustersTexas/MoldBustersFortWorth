@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://moldbustersfortworth.com
+Host: https://www.moldbustersfortworth.com
 
 # Sitemaps
-Sitemap: https://moldbustersfortworth.com/sitemap.xml
+Sitemap: https://www.moldbustersfortworth.com/sitemap.xml

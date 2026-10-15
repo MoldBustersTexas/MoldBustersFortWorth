@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://moldbustersfortworth.com',
+  siteUrl: 'https://www.moldbustersfortworth.com',
   generateRobotsTxt: true,
 };
