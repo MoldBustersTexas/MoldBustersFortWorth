@@ -9,7 +9,7 @@ description:
 alternates: { canonical: "/mold-removal-fort-worth" },
   openGraph: {
     title: "Mold Removal Fort Worth | Mold Busters Fort Worth",
-    description: "Small-area mold cleaning, HVAC cleaning and indoor air quality treatment in Fort Worth.",
+    description: "Qualified mold treatments, HVAC contamination cleaning, mold inspections, and indoor air quality services in Fort Worth, TX.",
     url: "https://www.moldbustersfortworth.com/mold-removal-fort-worth",
     siteName: "Mold Busters Fort Worth",
     type: "website",
@@ -64,11 +64,12 @@ export default function MoldRemovalFortWorthPage() {
               <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm mb-6">
                 <ShieldCheck className="w-4 h-4" /> Focused Mold Cleaning & Indoor Air Quality Services
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">Mold Removal & Indoor Air Quality Services in Fort Worth, TX</h1>
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">Mold Removal & Qualified Mold Treatments in Fort Worth, TX</h1>
               <p className="text-lg text-slate-200 leading-relaxed mb-6">
                 Concerned about mold, musty odors, or HVAC contamination in your home?
-Mold Busters Fort Worth provides professional mold inspections,
-qualified mold removal, HVAC cleaning, and indoor air quality treatments.
+Mold Busters Fort Worth provides comprehensive mold inspections,
+qualified mold treatments, HVAC contamination cleaning, and
+indoor air quality services.
 We identify potential moisture sources, address qualifying affected areas,
 and help you improve your indoor environment. Call 214-802-4655
 to schedule an inspection.
@@ -141,9 +142,9 @@ to schedule an inspection.
             <h3 className="text-2xl font-bold mb-6">Explore Related Services</h3>
             <div className="grid md:grid-cols-3 gap-5">
               {[
-                { href: "/mold-testing-fort-worth", title: "Mold Testing & Inspections", body: "InstaScope screening, HVAC observations and optional laboratory identification samples." },
-                { href: "/indoor-air-quality-testing-fort-worth", title: "Indoor Air Quality Testing", body: "Investigate airborne particulate concerns and indoor environmental conditions." },
-                { href: "/hvac-moisture-review-fort-worth", title: "HVAC & Moisture Review", body: "Explore condensation, drainage, pressure and HVAC-related moisture concerns." },
+               { href: "/mold-testing-fort-worth", title: "Mold Inspection & Testing in Fort Worth", body: "Schedule a mold inspection with InstaScope screening, HVAC evaluations, and optional laboratory mold identification samples." },
+                { href: "/indoor-air-quality-testing-fort-worth", title: "Indoor Air Quality Testing in Fort Worth", body: "Explore whole-home InstaScope inspections, airborne particulate screening, HVAC evaluations, and indoor air quality concerns." },
+                { href: "/hvac-moisture-review-fort-worth", title: "HVAC Moisture & Contamination Inspections in Fort Worth", body: "Identify HVAC moisture concerns, drainage problems, air leakage, condensation, and potential microbial contamination in accessible HVAC components." },
               ].map((item) => <Link key={item.href} href={item.href} className="block rounded-xl bg-white border border-slate-200 p-6 hover:border-emerald-600 hover:shadow-md transition"><h4 className="text-xl font-bold mb-3">{item.title}</h4><p className="text-slate-600 mb-4">{item.body}</p><span className="text-emerald-700 font-semibold">Learn More →</span></Link>)}
             </div>
           </div>
