@@ -41,6 +41,18 @@ export default function ContactForm() {
         throw new Error("Submission failed");
       }
 
+            // Track successful contact form submissions in GA4.
+      if (typeof window !== "undefined") {
+        const analyticsWindow = window as Window & {
+          gtag?: (...args: unknown[]) => void;
+        };
+
+        analyticsWindow.gtag?.("event", "form_submit", {
+          form_name: "contact_form",
+          form_destination: "/api/contact",
+        });
+      }
+
       setStatus("success");
       form.reset();
     } catch {
